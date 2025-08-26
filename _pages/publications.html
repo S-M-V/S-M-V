@@ -22,11 +22,6 @@ author_profile: true
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
-        <h2><a href="{{ pub.url }}">{{ pub.title }}</a></h2>
-        {% if pub.tocimage %}
-            img src="{{ pub.tocimage }}" alt="TOC image for {{ pub.title }}" style="width:150px;"/>
-        {% endif %}<
-        <p>{{ pub.excerpt }}</p>    
     {% endunless %}
       {% include archive-single.html %}
     {% endfor %}
