@@ -40,4 +40,29 @@
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
+
+   publication-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.publication-main {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.toc-image-right {
+  flex: 0 0 300px;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.toc-image-right img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 ;
