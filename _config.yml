@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Samuel Mañas-Valero | Materials Physicist"
+title                    : "Samuel Mañas-Valero"
 title_separator          : "-"
 name                     : &name "Samuel"
 description              : "Research in van der Waals materials, spin transport, and quantum devices."
