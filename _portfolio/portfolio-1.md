@@ -1,7 +1,7 @@
 ---
 title: "Fundamentals and applications of van der Waals magnets in magnon spintronics"
-collection: portfolio
 excerpt: "Short description of portfolio item number 2 <br/><img src='/images/publications/2025_03_Newton.jpg'>"
+collection: portfolio
 date: 2025-03-03
 venue: 'Newton, Volume 1, Issue 1'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
