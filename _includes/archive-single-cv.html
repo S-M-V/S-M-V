@@ -14,55 +14,38 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li style="display: flex; align-items: flex-start; gap: 1em; list-style: none; padding: 1em 0; border-bottom: 1px solid #ddd;">
-
-      {% if post.tocimage %}
-        <div style="flex-shrink: 0; width: 150px;">
-          <img 
-            src="{{ post.tocimage }}" 
-            alt="TOC image for {{ title }}" 
-            style="width: 100%; height: auto; display: block; border-radius: 4px;" />
-        </div>
-      {% endif %}
-
-      <div>
-        {% if include.type == "grid" and teaser %}
-          <div class="archive__item-teaser">
-            <img src=
-              {% if teaser contains "://" %}
-                "{{ teaser }}"
-              {% else %}
-                "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-              {% endif %}
-              alt="">
-          </div>
-        {% endif %}
-
-        <h3 class="archive__item-title" itemprop="headline" style="margin-top: 0; margin-bottom: 0.5em;">
-          {% if post.link %}
-            <a href="{{ post.link }}">{{ title }}</a> 
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">
-              <i class="fa fa-link" aria-hidden="true" title="permalink"></i>
-              <span class="sr-only">Permalink</span>
-            </a>
+    <li>
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
           {% else %}
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-        </h3>
-
-        {% if post.read_time %}
-          <p class="page__meta" style="margin: 0 0 0.5em;">
-            <i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}
-          </p>
-        {% endif %}
-
-        {% if post.venue %}
-          <p class="archive__item-excerpt" itemprop="description" style="margin: 0;">
-            {{ post.citation }}
-          </p>
-        {% endif %}
+          alt="">
       </div>
+    {% endif %}
+
+    <!-- TOC Image -->
+    {% if post.tocimage %}
+        <div class="archive__item-tocimage" style="margin-bottom:0.5em;">
+          <img src="{{ post.tocimage }}" alt="TOC image for {{ title }}" style="width:150px; height:auto;" />
+        </div>
+    {% endif %}
       
+    <h3 class="archive__item-title" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h3>
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
     </li>
-  </article>
+ </article>
 </div>
+{% include base_path %}
