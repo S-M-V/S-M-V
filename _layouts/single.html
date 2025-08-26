@@ -106,4 +106,19 @@ layout: default
       </div>
     </div>
   {% endif %}
+  {% if page.tocimage %}
+    <div class="toc-image-right">
+      <img src="{{ page.tocimage }}" alt="TOC image for {{ page.title }}">
+    </div>
+  {% endif %}
+
+  <div class="publication-main">
+    <h1>{{ page.title }}</h1>
+    <p><strong>Venue:</strong> {{ page.venue }}</p>
+    <p><strong>Citation:</strong> {{ page.citation }}</p>
+    
+    <div class="publication-content">
+      {{ content }}
+    </div>
+  </div>
 </div>
