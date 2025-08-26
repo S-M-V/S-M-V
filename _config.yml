@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Samuel Mañas-Valero / Site Title"
+title                    : "Samuel Mañas-Valero"
 title_separator          : "-"
 name                     : &name "Samuel"
 description              : &description "personal description"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Samuel Mañas-Valero"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Kavli postdoctoral researcher @ TUDelft"
   location         : "Delft, The Netherlands"
   employer         : "Delft University of Technology"
   uri              : # URL
@@ -35,13 +35,13 @@ author:
   academia         : # URL
   arxiv            : http://arxiv.org/a/manasvalero_s_1# URL - Update with the correct link to your profile
   googlescholar    : https://scholar.google.com/citations?user=cQd43coAAAAJ&hl=en"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  inspire-hep      : # URL
-  impactstory      : # URL
+#  inspire-hep      : # URL
+#  impactstory      : # URL
   orcid            : "https://orcid.org/0000-0001-6319-9238" #"http://orcid.org/yourorcidurl"
-  semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+#  semantic         : # URL
+#  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : "https://www.researchgate.net/profile/Samuel-Manas-Valero?ev=hdr_xprf" # URL
-  scopus           : # URL
+  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=56488108800"# URL
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
