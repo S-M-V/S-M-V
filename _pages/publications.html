@@ -62,3 +62,19 @@ author_profile: true
   {% include archive-single.html %}
 
 {% endfor %}
+
+# Publications
+
+<ul>
+{% for pub in site.publications %}
+  <li>
+    <a href="{{ pub.url }}">{{ pub.title }}</a><br/>
+
+    {% if pub.tocimage %}
+      <img src="{{ pub.tocimage }}" alt="TOC image for {{ pub.title }}" style="width:150px; margin-top:0.5em; margin-bottom:0.5em;" />
+    {% endif %}
+
+    <p>{{ pub.excerpt }}</p>
+  </li>
+{% endfor %}
+</ul>
