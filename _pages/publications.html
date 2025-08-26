@@ -11,24 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-
-<ul class="publications-list">
-{% for pub in site.publications %}
-  <li class="publication-item" style="display:flex; gap:1em; margin-bottom: 2em; list-style:none;">
-    {% if pub.tocimage %}
-      <img src="{{ pub.tocimage }}" alt="TOC image for {{ pub.title }}" style="width: 150px; object-fit: cover; border-radius: 5px;" />
-    {% endif %}
-    <div>
-      <h3><a href="{{ pub.paperurl }}">{{ pub.title }}</a></h3>
-      <p><em>{{ pub.citation }}</em></p>
-      <p>{{ pub.excerpt }}</p>
-    </div>
-  </li>
-{% endfor %}
-</ul>
-
 <!-- New style rendering if publication categories are defined -->
-<!--
 {% if site.publication_category %}
 
   {% for category in site.publication_category  %}
@@ -92,4 +75,3 @@ author_profile: true
   </li>
 {% endfor %}
 </ul>
--->
