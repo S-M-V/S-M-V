@@ -1,5 +1,5 @@
 ---
-title: "Portfolio item number 1"
+title: "Fundamentals and applications of van der Waals magnets in magnon spintronics"
 excerpt: "Short description of portfolio item number 1<br/><img src='/images/publications/2025_03_Newton.jpg'>"
 collection: portfolio
 ---
