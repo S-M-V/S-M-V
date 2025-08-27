@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-theme: al-folio
+theme                    : "al-folio"
 title                    : "Spins & Materials Vanguard"
 title_separator          : "-"
 name                     : &name "Samuel"
